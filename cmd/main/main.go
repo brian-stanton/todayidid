@@ -1,0 +1,12 @@
+// This entry point preserves the original `go run ./cmd/main` workflow.
+package main
+
+import (
+	"os"
+
+	"github.com/brian-stanton/todayidid/internal/cli"
+)
+
+func main() {
+	os.Exit(cli.Run(os.Args[1:], os.Stdin, os.Stdout, os.Stderr))
+}

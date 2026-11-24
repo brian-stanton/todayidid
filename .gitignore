@@ -1,0 +1,18 @@
+# Local builds and development output.
+/bin/
+*.test
+coverage.out
+out/
+.DS_Store
+.env
+.env.*
+/.codex/
+/.idea/
+/.vscode/
+
+# Never commit local journal data to the public application repository.
+/notes/
+/journal/
+/data/
+/todayidid
+*.log
